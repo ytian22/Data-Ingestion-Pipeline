@@ -9,7 +9,7 @@ There are three computers that are involved with deploy script: <br>
 
 ## Steps
 In order to test the code, the following line will be appended to the end of the deploy.py code provided.
-`deploy( 'path_to_ssh_key_private_key', 'server-address', 'prefix')`
+'''deploy( 'path_to_ssh_key_private_key', 'server-address', 'prefix')'''
 Where the variables are the path to the ssh key needed to login to the server and the server address is the url of the server that will be SSH’d into.
 
 The deploy script would do the following:
