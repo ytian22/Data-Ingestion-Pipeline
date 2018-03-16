@@ -3,11 +3,9 @@ This application accepts connections, log all requests and then properly process
 
 ## General Description
 There are three computers that are involved with deploy script: <br>
-\begin{itemize}
-  \item Repository: Where the code was stored. <br>
-  \item Local Machine: Where the code was developed, and where the deploy script was run from. <br>
-  \item The server: Where the code was deployed to. <br>
-\end{itemize}
+- Repository: Where the code was stored. <br>
+- Local Machine: Where the code was developed, and where the deploy script was run from. <br>
+- The server: Where the code was deployed to. <br>
 
 ## Steps
 In order to test the code, the following line will be appended to the end of the deploy.py code provided.
