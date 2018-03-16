@@ -28,19 +28,17 @@ def set_crontab(ssh, repo_path, script, prefix):
     ssh.exec_command("echo '*/2 * * * * python " + repo_path + "/" + script + " " + prefix + "' > ~/crontabfile") 
     ssh.exec_command('crontab ~/crontabfile')
 
-def deploy(key, hostname, prefix):
-    ssh = login_server(hostname, 'testtest', key)
-    copy_repo_2_server(ssh, 'https://github.com/zhengjxu/msan603.git')
-#     stdin, stdout, stderr = ssh.exec_command('python ~/msan603/process.py prefix')
-#     print stdout.read().decode('utf-8')
-    ssh.exec_command('python '+'~/msan603/process_json_sprint2.py '+prefix)
-    set_crontab(ssh, '~/msan603', 'log_rotate_sprint2.py', prefix)
-    ssh.close() # log out  
+def deploy(key, hostname, username, prefix):
+    ssh = login_server(hostname, username, key)
+    copy_repo_2_server(ssh, git_repo)
+    ssh.exec_command('python '+'~/crontab/process_json.py '+prefix)
+    set_crontab(ssh, '~/crontab', 'log_rotate.py', prefix)
+    ssh.close() # log out
 
+if __name__ == '__main__':
+    hostname = 'ec2-34-213-110-139.us-west-2.compute.amazonaws.com'
+    username = 'testtest'
+    git_repo = 'https://github.com/ytian22/crontab.git'
+    key  = 'abc.pem'
 
-# if __name__ == '__main__':
-#     hostname = 'ec2-34-213-110-139.us-west-2.compute.amazonaws.com'
-#     username = 'testtest'
-#     key  = 'zhengjxu-west.pem'
-
-#     deploy(key, hostname, 'prefix')
+    deploy(key, hostname, 'prefix')

@@ -1,4 +1,4 @@
-from flask import Flask, request #import main Flask class and request objectfrom process_Jay2 import extract_json # import function from process.py
+from flask import Flask, request
 import os
 import sys
 import glob
