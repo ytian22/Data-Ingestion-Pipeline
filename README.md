@@ -8,11 +8,11 @@ There are three computers that are involved with deploy script: <br>
 - The server: Where the code was deployed to. <br>
 
 ## Steps
-In order to test the code, the following line will be appended to the end of the deploy.py code provided.
-'''deploy( 'path_to_ssh_key_private_key', 'server-address', 'prefix')'''
-Where the variables are the path to the ssh key needed to login to the server and the server address is the url of the server that will be SSH’d into.
-
-The deploy script would do the following:
+In order to test the code, the following line will be appended to the end of the deploy.py code provided.<br>
+```deploy( 'path_to_ssh_key_private_key', 'server-address', 'prefix')```
+Where the variables are the path to the ssh key needed to login to the server and the server address is the url of the server that will be SSH’d into. <br>
+<br>
+The deploy script would do the following:<br>
 \begin{enumerate}
   \item Login, via SSH to the server.
   \item Clone the repository, which contains process_json.py and log_rotate.py, to the server, in the home directory.
