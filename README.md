@@ -1,12 +1,12 @@
 # Data-Ingestion-System-Implementation
-This application accepts connections, log all requests and then properly process well-formed JSON strings. 
+This application accepts connections, log all requests and then properly process well-formed JSON strings. <br>
 
 ## General Description
-There are three computers that are involved with deploy script:
+There are three computers that are involved with deploy script: <br>
 \begin{itemize}
-  \item Repository: Where the code was stored.
-  \item Local Machine: Where the code was developed, and where the deploy script was run from. 
-  \item The server: Where the code was deployed to.
+  \item Repository: Where the code was stored. <br>
+  \item Local Machine: Where the code was developed, and where the deploy script was run from. <br>
+  \item The server: Where the code was deployed to. <br>
 \end{itemize}
 
 ## Steps
