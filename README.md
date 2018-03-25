@@ -1,4 +1,4 @@
-# Data Ingestion System Implementation
+# Data Ingestion Pipeline
 This application accepts connections, log all requests and then properly process well-formed JSON strings. <br>
 
 ## General Description
