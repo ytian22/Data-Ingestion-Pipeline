@@ -1,4 +1,4 @@
-# Data Ingestion Pipeline
+# Data Ingestion Pipeline (Jan 2018 - Mar 2018)
 This application accepts connections, log all requests and then properly process well-formed JSON strings. <br>
 
 ## General Description
